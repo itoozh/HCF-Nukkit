@@ -1,0 +1,21 @@
+Owner:
+  name: Owner
+  color: '&r&4'
+  prefix: '&8[&4Owner&8]'
+  suffix: ''
+  permissions:
+    - "core.gkit"
+    - "core.rank"
+User:
+  default: true # if you need add a default rank add this line
+  name: User
+  color: '&r&f'
+  prefix: '&8[&2User&8]'
+  suffix: ''
+  permissions: []
+Mateo:
+  name: Mateo
+  color: '&r&a'
+  prefix: '&8[&aMaty&8]'
+  suffix: ''
+  permissions: []

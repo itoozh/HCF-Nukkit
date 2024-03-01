@@ -1,0 +1,111 @@
+SCOREBOARD_INFO:
+  TITLE: '&d&lAzurite &7|&r &fHCF' # If changer not enabled
+  LINES: '&d '
+  TIME:
+    - "     &7&o%localtime_time_d MMM, HH:mm:ss% "
+
+TITLE_CONFIG:
+  CHANGER_ENABLED: true
+  CHANGER_TICKS: 290
+  CHANGES:
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lO§f§lRANGE'
+    - '§6§lOR§f§lANGE'
+    - '§6§lORA§f§lNGE'
+    - '§6§lORAN§f§lGE'
+    - '§6§lORANG§f§lE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lORANGE'
+    - '§f§lORANGE'
+    - '§6§lORANGE'
+
+FOOTER_CONFIG:
+  CHANGER_ENABLED: true
+  CHANGER_TICKS: 3500
+  CHANGES:
+    - "&7&ostore.orange.cc"
+    - "&7&odiscord.orange.cc"
+    - "&7&onamemc.orange.cc"
+
+KITS_INFO:
+  KILLS: '&6&l|&r &fKills: &6'
+  DEATHS: '&6&l|&r &fDeaths: &6'
+  BALANCE: '' # Empty to disable
+  COINS: '&6&l|&r &fCoins: &6'
+
+DEATHBAN_INFO:
+  TIME: '&c&lDeathban&7: &c'
+  LIVES: '&a&lLives&7: &c'
+
+PLAYER_TIMERS:
+  SOTW: '&6&l|&r &fSOTW: &6'
+  SOTW_OFF: '&6&l|&r &fSOTW: &c'
+  CLAIM: '&6&l|&r &fClaim: &c'
+  BALANCE: '&a&lBalance: &f$'
+  INVINCIBILITY: '&6&l|&r &fProtection: &6'
+  PVP_TIMER: '&6&l|&r &fPvP Timer: &6'
+  COMBAT_TAG: '&6&l|&r &fSpawn Tag: &6'
+  ENDER_PEARL: '&6&l|&r &fEnderpearl: &6'
+  APPLE: '&6&l|&r &fApple: &6'
+  GAPPLE: '&6&l|&r &fGApple: &6'
+  STUCK: '&6&l|&r &fStuck: &6'
+  HQ: '&6&l|&r &fHome: &6'
+  ARCHER_TAG: '&6&l|&r &fArcher Tag: &6'
+  WARMUP: '&6&l|&r &fWarmup: &6'
+  LOGOUT: '&6&l|&r &fLogout: &6'
+  ACTIVE_CLASS: '&6&l|&r &fClass: &6'
+  KOTH: '&6&l|&r &f%koth%: &6'
+  SPAWN: '&6&l|&r &fSpawn: &6'
+  ABILITIES: '&6&l|&r &f%ability%&f: &6'
+  GLOBAL_ABILITIES: '&6&l|&r &fPartner Item: &6'
+
+BARD_CLASS:
+  BARD_ENERGY: '&6&l|&r &fBard Energy: &6'
+  BARD_EFFECT: '&6&l|&r &fBard Effect: &6'
+
+MAGE_CLASS:
+  MAGE_ENERGY: '&6&l|&r &fMage Energy: &6'
+  MAGE_EFFECT: '&6&l|&r &fMage Effect: &6'
+
+ROGUE_CLASS:
+  BACKSTAB: '&6&l|&r &fBackstab: &6'
+
+MINER_CLASS:
+  INVIS: '&6&l|&r &fInvisible: &6'
+  DIAMONDS: '&6&l|&r &fDiamonds: &6'
+
+KILL_THE_KING:
+  ENABLED: true
+  LINES:
+    - '&6&l|&r &fKing: &6%king%'
+    - '&6&l|&r &fReward: &6%reward%'
+    - '&6&l|&r &fHealth: &6%health%❤'
+    - ' '
+
+TEAM_FOCUS:
+  LINES:
+    - '&r&6 '
+    - '&6&l|&r &fTeam: &6%team%'
+    - '&6&l|&r &fDTR: %dtr-color%%dtr%%dtr-symbol%'
+    - '&6&l|&r &fOnline: &6%online%'
+    - '&6&l|&r &fHQ: &6%hq%'
+TEAM_RALLY:
+  LINES:
+    - ' '
+    - '&6&l|&r &fRally: &6%pos%'
+
+STAFF_MODE:
+  ENABLED: true
+  VANISH_NO_MODMODE: # They are vanished but not in staff mode.
+    - '&7&lIn Silent Mode'
+  MOD_MODE:
+    - '&7&lIn Silent Mode'
+
+CUSTOM_TIMERS:
+  FORMAT: '%displayName%&7: &c'

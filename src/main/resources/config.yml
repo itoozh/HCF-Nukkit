@@ -1,0 +1,680 @@
+TEAM_NAME:
+  MIN_LENGTH: 3
+  MAX_LENGTH: 12
+
+TEAM_POINTS:
+  DEATH: 5
+  KILLS: 5
+
+TEAMS:
+  TEAM_SIZE: 5
+  F_STUCK_MAX_MOVE: 5
+
+DEATH_LISTENER:
+  PLAYER_FORMAT: '&c%player%&4[%kills%]'
+  TEAMS_MESSAGES:
+    LOST_POINTS: '&c-%points% points &efor the death of &9%player%&e.'
+    GAINED_POINTS: '&c+%points% points &efor the killing of &9%player%&e.'
+
+TEAM_DTR:
+  SOLO_DTR: 1.1
+  PER_PLAYER: 1.1
+  MAX_DTR: 7.2
+  MIN_DTR: -0.9
+  DEATH_DTR: 1.0 # Amount taken from when a player dies
+  REGEN_PER_MIN: 0.1
+  REGEN_TIMER: 1 # Minutes
+  LOW_DTR: 0.25 # what is considered low dtr for the color below
+  COLOR:
+    RAIDABLE: '&4'
+    LOW_DTR: '&e'
+    NORMAL: '&a'
+  SYMBOL:
+    FREEZE: '&c■'
+    REGENERATING: '&b■'
+    NORMAL: '&a■'
+
+CHAT_FORMAT:
+  KILL_TOP_FORMAT: '&8[%killtop%&8] &r'
+  FTOP_FORMAT: '%ftop% '
+  PUBLIC_NO_TEAM: '%killtop%%prefix%%color%%player%%suffix%&7: &f%s'
+  PUBLIC_TEAM: '&6[%ftop%&r%team%&6]&r %killtop%%prefix%%color%%player%%suffix%&7: &f%s'
+  TEAM_CHAT:
+    FORMAT: '&2(Team) %player%: &e%message%'
+  OFFICER_CHAT:
+    FORMAT: '&d(Officer) %player%: &e%message%'
+  CO_LEADER_CHAT:
+    FORMAT: '&3(Co-Leader) %player%: &e%message%'
+
+RELATION_COLOR:
+  TEAMMATE: '&2'
+  ENEMY: '&c'
+  FOCUSED: '&d'
+  ARCHER_TAG: '&e'
+  PVP_TIMER: '&6'
+  INVINCIBILITY: '&6'
+
+NAMETAGS:
+  NORMAL: '&6[%name% &7| %dtr-color%%dtr%%dtr-symbol%&6]'
+  TEAM_TOP: '&6[%pos% %name% &7| %dtr-color%%dtr%%dtr-symbol%&6]'
+
+LUNAR_PREFIXES:
+  ENABLED: true
+  TEAMS:
+    ONE: '&4#1'
+    TWO: '&c#2'
+    THREE: '&f#3'
+  PLAYER:
+    ONE: '&6#1'
+    TWO: '&2#2'
+    THREE: '&7#3'
+
+TEAM_MAP:
+  RADIUS: 25
+
+CLAIMING:
+  MIN_SIZE: 5
+  MAX_SIZE: 40
+  CLAIM_SEPARATOR: 2
+  PRICE_PER_BLOCK: 5
+  CLAIM_WAND:
+    NAME: '&a&oClaiming Wand'
+    TYPE: 'WOODEN_HOE'
+    LORE:
+      - '&eRight/Left Click &6Block'
+      - '&b- &fSelect claim''s corners'
+      - ''
+      - '&eRight Click &6Air'
+      - '&b- &fCancel current claim'
+      - ''
+      - '&9Crouch &eLeft Click &6Block/Air'
+      - '&b- &fPurchase current claim'
+
+WARZONE:
+  WARZONE_NORMAL: 300
+  WARZONE_NETHER: 500
+
+SYSTEM_TEAMS:
+  DENIED_INTERACT:
+    - 64
+    - 96
+    - 107
+    - 54
+    - 146
+  SAFEZONE: '&a'
+  ROADS: '&6'
+  EVENT: '&9'
+  WARZONE: '&c'
+  WILDERNESS: '&7'
+
+WALLS:
+  PVP_TIMER:
+    TYPE: 'STAINED_GLASS'
+    DATA: 5
+  INVINCIBILITY:
+    TYPE: 'STAINED_GLASS'
+    DATA: 5
+  COMBAT_TAG:
+    TYPE: 'STAINED_GLASS'
+    DATA: 14
+  LOCKED_CLAIM:
+    TYPE: 'STAINED_GLASS'
+    DATA: 3
+
+SIGNS_CONFIG:
+  UP_SIGN:
+    ENABLED: true
+    LINES:
+      - '&4[Elevator]'
+      - 'Up'
+      - ''
+      - ''
+  DOWN_SIGN:
+    ENABLED: false
+    LINES:
+      - '&4[Elevator]'
+      - 'Down'
+      - ''
+      - ''
+  BUY_SIGN:
+    ENABLED: true
+    LINES:
+      - '&a- Buy -'
+      - '%material%'
+      - '%amount%'
+      - '$%price%'
+  SELL_SIGN:
+    ENABLED: true
+    LINES:
+      - '&c- Sell -'
+      - '%material%'
+      - '%amount%'
+      - '$%price%'
+  KIT_SIGN:
+    ENABLED: true
+    LINES:
+      - '&9- Kit -' # You still create with [Kit] though!
+      - '%kit%'
+      - ''
+      - ''
+  SUBCLAIM_SIGN:
+    ENABLED: true
+    LINES:
+      - '&4[Subclaim]' # You still create with [Subclaim] though!
+      - '%member%'
+      - ''
+      - ''
+
+BORDERS:
+  WORLD: 2000
+  NETHER: 1000
+
+TIMERS_COOLDOWN:
+  INVINCIBILITY: 3600
+  PVP_TIMER: 1800
+  COMBAT_TAG: 45
+  APPLE: 45
+  ENDER_PEARL: 16
+  GAPPLE: 10800
+  STUCK: 45
+  HQ: 10
+  ARCHER_TAG: 10
+  WARMUP: 3
+  LOGOUT: 45
+  TEAM_CREATE_CD: 30
+  TEAM_RENAME_CD: 30
+  LOCK_CLAIM: 30
+
+SPAWN_TIMER:
+  ENABLED: false # /spawn start a countdown to teleport to spawn?
+  TIME: 45 # Time before they are teleported to spawn
+
+# All small letters.
+DISABLED_COMMANDS:
+  MAIN_COMMANDS:
+    - 'command'
+  TEAM_SUBCOMMANDS:
+    - 'subcommand'
+
+RENAMING:
+  DENIED_NAMES:
+    - 'bitch'
+    - 'fuck'
+    - 'nigga'
+    - 'nigger'
+    - 'sex'
+    - 'kys'
+  DENIED_ITEMS:
+    - 'TRIPWIRE_HOOK'
+
+REPAIRING:
+  DENIED_ITEMS:
+    - 'TRIPWIRE_HOOK'
+
+COMBAT_TIMER:
+  HQ_TELEPORT: false
+  STUCK_TELEPORT: true
+  LOGOUT_COMMAND: false
+  END_ENTRY: false
+
+INVINCIBILITY:
+  END_ENTRY: true
+  HQ_TELEPORT: true
+  ENTER_OWN_CLAIM: true
+
+HQ_TIMER:
+  INSTANT_TP_SPAWN: true
+  ALLOW_TP_OTHER_CLAIM: true # Allow teleports in other players claims
+
+PVP_TIMER:
+  END_ENTRY: false
+  HQ_TELEPORT: false
+  ENTER_OWN_CLAIM: false
+
+LEADERBOARDS_COMMAND:
+  TITLE: '&r&dLeaderboards'
+  SIZE: 27
+  NONE_MESSAGE: '&r&7Empty'
+  ITEMS:
+    TEAM_TOP:
+      NAME: '&r&dTop Teams'
+      MATERIAL: 'PAPER'
+      SLOT: 13
+      FORMAT: '&r&d%team% &7- &f%points%'
+      LORE:
+        - '&r&f1. %team_top1%'
+        - '&r&f2. %team_top2%'
+        - '&r&f3. %team_top3%'
+        - '&r&f4. %team_top4%'
+        - '&r&f5. %team_top5%'
+        - '&r&f6. %team_top6%'
+        - '&r&f7. %team_top7%'
+        - '&r&f8. %team_top8%'
+        - '&r&f9. %team_top9%'
+        - '&r&f10. %team_top10%'
+    KILLS_TOP:
+      NAME: '&r&dTop Kills'
+      MATERIAL: 'PAPER'
+      SLOT: 12
+      FORMAT: '&r&d%player% &7- &f%kills%'
+      LORE:
+        - '&r&f1. %kills_top1%'
+        - '&r&f2. %kills_top2%'
+        - '&r&f3. %kills_top3%'
+        - '&r&f4. %kills_top4%'
+        - '&r&f5. %kills_top5%'
+        - '&r&f6. %kills_top6%'
+        - '&r&f7. %kills_top7%'
+        - '&r&f8. %kills_top8%'
+        - '&r&f9. %kills_top9%'
+        - '&r&f10. %kills_top10%'
+    DEATHS_TOP:
+      NAME: '&r&dTop Deaths'
+      MATERIAL: 'PAPER'
+      SLOT: 14
+      FORMAT: '&r&d%player% &7- &f%deaths%'
+      LORE:
+        - '&r&f1. %deaths_top1%'
+        - '&r&f2. %deaths_top2%'
+        - '&r&f3. %deaths_top3%'
+        - '&r&f4. %deaths_top4%'
+        - '&r&f5. %deaths_top5%'
+        - '&r&f6. %deaths_top6%'
+        - '&r&f7. %deaths_top7%'
+        - '&r&f8. %deaths_top8%'
+        - '&r&f9. %deaths_top9%'
+        - '&r&f10. %deaths_top10%'
+    KDR_TOP:
+      NAME: '&r&dTop KDR'
+      MATERIAL: 'PAPER'
+      SLOT: 15
+      FORMAT: '&r&d%player% &7- &f%kdr%'
+      LORE:
+        - '&r&f1. %kdr_top1%'
+        - '&r&f2. %kdr_top2%'
+        - '&r&f3. %kdr_top3%'
+        - '&r&f4. %kdr_top4%'
+        - '&r&f5. %kdr_top5%'
+        - '&r&f6. %kdr_top6%'
+        - '&r&f7. %kdr_top7%'
+        - '&r&f8. %kdr_top8%'
+        - '&r&f9. %kdr_top9%'
+        - '&r&f10. %kdr_top10%'
+    KILLSTREAKS_TOP:
+      NAME: '&r&dTop Killstreaks'
+      MATERIAL: 'PAPER'
+      SLOT: 11
+      FORMAT: '&r&d%player% &7- &f%killstreak%'
+      LORE:
+        - '&r&f1. %killstreaks_top1%'
+        - '&r&f2. %killstreaks_top2%'
+        - '&r&f3. %killstreaks_top3%'
+        - '&r&f4. %killstreaks_top4%'
+        - '&r&f5. %killstreaks_top5%'
+        - '&r&f6. %killstreaks_top6%'
+        - '&r&f7. %killstreaks_top7%'
+        - '&r&f8. %killstreaks_top8%'
+        - '&r&f9. %killstreaks_top9%'
+        - '&r&f10. %killstreaks_top10%'
+BARD_CLASS:
+  ENABLED: true
+  MAX_ENERGY: 120
+  BARD_DISTANCE: 25
+  BARD_COOLDOWN: 10 # Cooldown of bard effects
+  KNOCKBACK_ITEM: # Pushback effect when right-clicked
+    ENABLED: true
+    ENERGY_REQUIRED: 20
+    MATERIAL: 'COAL'
+    DATA: 0
+    RADIUS: 8
+  ARMOR:
+    HELMET: 'GOLDEN_HELMET'
+    CHESTPLATE: 'GOLDEN_CHESTPLATE'
+    LEGGINGS: 'GOLDEN_LEGGINGS'
+    BOOTS: 'GOLDEN_BOOTS'
+  PASSIVE_EFFECTS:
+    - 'SPEED, MAX_VALUE, 2'
+    - 'REGENERATION, MAX_VALUE, 2'
+    - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
+  HOLDABLE_EFFECTS:
+    # Create as many as you want under this.
+    SPEED:
+      EFFECT: 'SPEED, 5s, 2'
+      MATERIAL: SUGAR
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    JUMP:
+      EFFECT: 'JUMP, 5s, 2'
+      MATERIAL: FEATHER
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    STRENGTH:
+      EFFECT: 'STRENGTH, 5s, 1'
+      MATERIAL: BLAZE_POWDER
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: true
+    RESISTANCE:
+      EFFECT: 'DAMAGE_RESISTANCE, 5s, 1'
+      MATERIAL: IRON_INGOT
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    REGENERATION:
+      EFFECT: 'REGENERATION, 5s, 1'
+      MATERIAL: GHAST_TEAR
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    FIRE_RESISTANCE:
+      EFFECT: 'FIRE_RESISTANCE, 5s, 1'
+      MATERIAL: MAGMA_CREAM
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    INVISIBILITY:
+      EFFECT: 'INVISIBILITY, 5s, 1'
+      MATERIAL: DYE
+      DATA: 0
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+  CLICKABLE_EFFECTS:
+    # Create as many as you want under this.
+    SPEED:
+      EFFECT: 'SPEED, 8s, 3'
+      MATERIAL: SUGAR
+      DATA: 0
+      ENERGY_REQUIRED: 25
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    JUMP:
+      EFFECT: 'JUMP, 8s, 7'
+      MATERIAL: FEATHER
+      DATA: 0
+      ENERGY_REQUIRED: 35
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    STRENGTH:
+      EFFECT: 'STRENGTH, 6s, 2'
+      MATERIAL: BLAZE_POWDER
+      DATA: 0
+      ENERGY_REQUIRED: 45
+      EFFECT_SELF: false
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    RESISTANCE:
+      EFFECT: 'DAMAGE_RESISTANCE, 6s, 3'
+      MATERIAL: IRON_INGOT
+      DATA: 0
+      ENERGY_REQUIRED: 35
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    REGENERATION:
+      EFFECT: 'REGENERATION, 6s, 3'
+      MATERIAL: GHAST_TEAR
+      DATA: 0
+      ENERGY_REQUIRED: 40
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    FIRE_RESISTANCE:
+      EFFECT: 'FIRE_RESISTANCE, 6s, 2'
+      MATERIAL: MAGMA_CREAM
+      DATA: 0
+      ENERGY_REQUIRED: 30
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    INVISIBILITY:
+      EFFECT: 'INVISIBILITY, 80s, 2'
+      MATERIAL: DYE
+      DATA: 0
+      ENERGY_REQUIRED: 45
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: true
+      EFFECT_ENEMIES: false
+    WITHER:
+      EFFECT: 'WITHER, 6s, 2'
+      MATERIAL: SPIDER_EYE
+      DATA: 0
+      ENERGY_REQUIRED: 35
+      EFFECT_SELF: true
+      EFFECT_FRIENDLIES: false
+      EFFECT_ENEMIES: true
+
+MAGE_CLASS:
+  ENABLED: true
+  MAX_ENERGY: 120
+  MAGE_DISTANCE: 25
+  MAGE_COOLDOWN: 10 # Cooldown of mage effects
+  ARMOR:
+    HELMET: 'GOLDEN_HELMET'
+    CHESTPLATE: 'CHAINMAIL_CHESTPLATE'
+    LEGGINGS: 'CHAINMAIL_LEGGINGS'
+    BOOTS: 'GOLDEN_BOOTS'
+  PASSIVE_EFFECTS:
+    - 'SPEED, MAX_VALUE, 2'
+    - 'REGENERATION, MAX_VALUE, 2'
+    - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
+  CLICKABLE_EFFECTS:
+    # Create as many as you want under this.
+    SLOWNESS:
+      EFFECT: 'SLOWNESS, 6s, 2'
+      MATERIAL: GOLD_NUGGET
+      DATA: 0
+      ENERGY_REQUIRED: 35
+    WEAKNESS:
+      EFFECT: 'WEAKNESS, 6s, 2'
+      MATERIAL: COAL
+      DATA: 0
+      ENERGY_REQUIRED: 30
+    HUNGER:
+      EFFECT: 'HUNGER, 6s, 2'
+      MATERIAL: ROTTEN_FLESH
+      DATA: 0
+      ENERGY_REQUIRED: 25
+    NAUSEA:
+      EFFECT: 'CONFUSION, 6s, 2'
+      MATERIAL: SEEDS
+      DATA: 0
+      ENERGY_REQUIRED: 40
+    WITHER:
+      EFFECT: 'WITHER, 6s, 2'
+      MATERIAL: SPIDER_EYE
+      DATA: 0
+      ENERGY_REQUIRED: 35
+    POSION:
+      EFFECT: 'POISON, 6s, 1'
+      MATERIAL: DYE
+      DATA: 2
+      ENERGY_REQUIRED: 45
+
+MULTIPLIERS:
+  NETHER_MULTIPLIER: 2
+  SMELT_MULTIPLIER: 2
+
+LOCATIONS:
+  END_EXITS:
+    END_EXIT: 'end, 0, 10, 0, 0.0, 0.0'
+    WORLD_EXIT: 'world, 0, 67, 14, 0.0, 0.0'
+
+ARCHER_CLASS:
+  ENABLED: true
+  TAGGED_DAMAGE_MULTIPLIER: 1.25 # eg 1.50 for 50% extra damage or 2.0 for 100% extra damage
+  ARMOR:
+    HELMET: 'LEATHER_HELMET'
+    CHESTPLATE: 'LEATHER_CHESTPLATE'
+    LEGGINGS: 'LEATHER_LEGGINGS'
+    BOOTS: 'LEATHER_BOOTS'
+  PASSIVE_EFFECTS:
+    - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
+    - 'SPEED, MAX_VALUE, 3'
+  ARCHER_BUFFS:
+    # Add as many as u want below
+    SPEED:
+      MATERIAL: 'SUGAR'
+      DISPLAY_NAME: '&6&l|&r &fSpeed: &6' # Used in scoreboards
+      DATA: 0
+      COOLDOWN: 30
+      EFFECT: 'SPEED, 6s, 4'
+    JUMP:
+      MATERIAL: 'FEATHER'
+      DISPLAY_NAME: '&6&l|&r &fJump: &6' # Used in scoreboards
+      DATA: 0
+      COOLDOWN: 30
+      EFFECT: 'JUMP, 6s, 7'
+    RESISTANCE:
+      MATERIAL: 'IRON_INGOT'
+      DISPLAY_NAME: '&6&l|&r &fResistance: &6' # Used in scoreboards
+      DATA: 0
+      COOLDOWN: 60
+      EFFECT: 'DAMAGE_RESISTANCE, 5s, 3'
+
+MINER_CLASS:
+  ENABLED: true
+  MINER_INVISIBILITY: 20 # Y-Level to receive invis
+  ARMOR:
+    HELMET: 'IRON_HELMET'
+    CHESTPLATE: 'IRON_CHESTPLATE'
+    LEGGINGS: 'IRON_LEGGINGS'
+    BOOTS: 'IRON_BOOTS'
+  PASSIVE_EFFECTS:
+    - 'HASTE, MAX_VALUE, 2'
+    - 'NIGHT_VISION, MAX_VALUE, 1'
+    - 'FIRE_RESISTANCE, MAX_VALUE, 1'
+  MINER_EFFECTS:
+    # Create as many as you want under this.
+    "50": 'HASTE, MAX_VALUE, 3'
+    "100": 'SPEED, MAX_VALUE, 1'
+    "125": 'HASTE, MAX_VALUE, 4'
+    "250": 'FIRE_RESISTANCE, MAX_VALUE, 1'
+    "400": 'SPEED, MAX_VALUE, 2'
+    "600": 'REGENERATION, MAX_VALUE, 1'
+    "1000": 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
+
+ROGUE_CLASS:
+  ENABLED: true
+  BACKSTAB_ITEM: 'GOLD_SWORD'
+  BACKSTAB_SOUND: 'RANDOM_ANVIL_BREAK' # Please change this to ENTITY_ITEM_BREAK if you are using 1.16
+  BACKSTAB_EFFECT: 'redstone_block' # Block particles
+  BACKSTAB_DAMAGE: 3.5 # hearts
+  BACKSTAB_COOLDOWN: 3
+  ARMOR:
+    HELMET: 'CHAINMAIL_HELMET'
+    CHESTPLATE: 'CHAINMAIL_CHESTPLATE'
+    LEGGINGS: 'CHAINMAIL_LEGGINGS'
+    BOOTS: 'CHAINMAIL_BOOTS'
+  PASSIVE_EFFECTS:
+    - 'SPEED, MAX_VALUE, 3'
+    - 'JUMP, MAX_VALUE, 2'
+    - 'DAMAGE_RESISTANCE, MAX_VALUE, 1'
+  BACKSTAB_EFFECTS: # for the player in rogue
+    - 'SLOWNESS, 3s, 3'
+  ROGUE_BUFFS:
+    # Add as many as u want below
+    SPEED:
+      MATERIAL: 'SUGAR'
+      DISPLAY_NAME: '&b&lSpeed&7: &c' # Used in scoreboards
+      DATA: 0
+      COOLDOWN: 30
+      EFFECT: 'SPEED, 6s, 5'
+    JUMP:
+      MATERIAL: 'FEATHER'
+      DISPLAY_NAME: '&a&lJump&7: &c' # Used in scoreboards
+      DATA: 0
+      COOLDOWN: 30
+      EFFECT: 'JUMP, 6s, 7'
+    RESISTANCE:
+      MATERIAL: 'IRON_INGOT'
+      DISPLAY_NAME: '&8&lResistance&7: &c' # Used in scoreboards
+      DATA: 0
+      COOLDOWN: 60
+      EFFECT: 'DAMAGE_RESISTANCE, 5s, 3'
+SETTINGS_COMMAND:
+  TITLE: '&r&dSettings'
+  SIZE: 10
+  ITEMS:
+    SCOREBOARD: # Don't change these names, remove this and below if you don't want it.
+      NAME: '&r&dScoreboard'
+      MATERIAL: 'PAPER'
+      SLOT: 10
+      LORE_ENABLED:
+        - '&r&9Do you want your'
+        - '&r&9scoreboard to show.'
+        - '&r'
+        - '&r &9■ &eShow Scoreboard'
+        - '&r   &eHide Scoreboard'
+      LORE_DISABLED:
+        - '&r&9Do you want your'
+        - '&r&9scoreboard to show.'
+        - '&r'
+        - '&r   &eShow Scoreboard'
+        - '&r &9■ &eHide Scoreboard'
+    SCOREBOARD_CLAIM: # Don't change these names, remove this and below if you don't want it.
+      NAME: '&r&dScoreboard Claim'
+      MATERIAL: 'PAPER'
+      SLOT: 12
+      LORE_ENABLED:
+        - '&r&9Do you want your current'
+        - '&r&9claim position to show.'
+        - '&r'
+        - '&r &9■ &eShow Claim'
+        - '&r   &eHide Claim'
+      LORE_DISABLED:
+        - '&r&9Do you want your current'
+        - '&r&9claim position to show.'
+        - '&r'
+        - '&r   &eShow Claim'
+        - '&r &9■ &eHide Claim'
+    PUBLIC_CHAT: # Don't change these names, remove this and below if you don't want it.
+      NAME: '&r&dPublic Chat'
+      MATERIAL: 'PAPER'
+      SLOT: 14
+      LORE_ENABLED:
+        - '&r&9Do you want to receive'
+        - '&r&9public chat messages.'
+        - '&r'
+        - '&r &9■ &eShow Messages'
+        - '&r   &eHide Messages'
+      LORE_DISABLED:
+        - '&r&9Do you want to receive'
+        - '&r&9public chat messages.'
+        - '&r'
+        - '&r   &eShow Messages'
+        - '&r &9■ &eHide Messages'
+    FOUND_DIAMOND: # Don't change these names, remove this and below if you don't want it.
+        NAME: '&r&dDiamond Alerts'
+        MATERIAL: 'PAPER'
+        SLOT: 16
+        LORE_ENABLED:
+          - '&r&9Do you want to see'
+          - '&r&9found diamond alerts.'
+          - '&r'
+          - '&r &9■ &eShow alerts'
+          - '&r   &eHide alerts'
+        LORE_DISABLED:
+          - '&r&9Do you want to see'
+          - '&r&9found diamond alerts.'
+          - '&r'
+          - '&r   &eShow alerts'
+          - '&r &9■ &eHide alerts'
+
+ONLINE_DONOR:
+  INTERVAL: 120 # Seconds
+  MESSAGE: # Permission: core.donor - Won't count opped players.
+    - '&7&m--------------------------'
+    - '&d&lAzurite Donors &8» &7%members%'
+    - '&fPurchase &dAzurite Rank &fat store.azurite.cc'
+    - '&7&m--------------------------'

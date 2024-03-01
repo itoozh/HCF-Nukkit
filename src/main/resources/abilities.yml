@@ -1,0 +1,318 @@
+GLOBAL_ABILITY: # Global ability cooldown
+  ENABLED: true
+  COOLDOWN: 10
+  DISABLE_IN_CITADEL: true
+  DISABLE_IN_EVENTS: true
+
+SWITCHER:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lSwitcher'
+  MATERIAL: 'SNOW_BALL' # Only egg/snowball works.
+  COOLDOWN: 30
+  DATA: 0
+  DISTANCE: 8
+  LORE:
+    - '&7This is a &dSwitcher &7Ball.'
+    - ''
+    - '&7Throw at a &cenemy &7to switch positions.'
+    - '&cMaximum Distance: &f8 Blocks!'
+    - ''
+    - '&bstore.azurite.net'
+
+LIGHTNING:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lThunderbolt'
+  MATERIAL: 'GOLD_INGOT'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  CHANCE: 20 # Chance of striking lightning
+  SECONDS: 10 # How long do we strike lightning for
+  DAMAGE: 1.5 # When struck with lightning how much damage should we do
+  LORE:
+    - '&7This is a &dThunderbolt'
+    - ''
+    - '&7Right click to activate &9thunder strikes'
+    - '&7every hit has a &c20% chance &7of &9striking &7the &cenemy'
+    - '&7with a &9lighning bolt &7that inflicts &c1.5 hearts'
+    - ''
+    - '&bstore.azurite.net'
+
+COMBO_ABILITY:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lCombo Ability'
+  MATERIAL: 'GLOWSTONE_DUST'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  MAX_HITS: 12
+  SECONDS: 10 # How long till they get the effect
+  AMOUNT_PER_HIT: 1 # How many seconds should we put per hit
+  EFFECT: 'INCREASE_DAMAGE, 2' # Duration determined by hits
+  LORE:
+    - '&7This is a &dCombo Ability'
+    - ''
+    - '&7Right click to begin a &a10 second period'
+    - '&7where each hit to an &cenemy &7results in'
+    - '&aone second &7of &cStrenght II &7(capped at &a12 seconds&7).'
+    - ''
+    - '&bstore.azurite.net'
+
+LUCKY_MODE:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lLucky Mode'
+  MATERIAL: 'INK_SACK'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 11
+  SECONDS: 10
+  MINIMUM_MULTIPLIER: -10.0
+  MAXIMUM_MULTIPLIER: 35.0
+  LORE:
+    - '&7This is a &dLucky Mode'
+    - ''
+    - '&7Right click to deal a random'
+    - '&cdamage boost &7ranging from'
+    - '&c-10% &7to &c+35% &7for &a10 seconds'
+    - ''
+    - '&bstore.azurite.net'
+
+RAGE_BALL:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lRage Ball'
+  MATERIAL: 'EGG'
+  COOLDOWN: 120
+  DATA: 0
+  COOLDOWN_WHOLE_TEAM: true # Put the whole cooldown on rage ball cooldown?
+  RADIUS: 8 # Radius of the rage ball
+  EFFECT: 'EXPLOSION_LARGE'
+  FRIENDLY_EFFECTS:
+    - 'INCREASE_DAMAGE, 8s, 2'
+    - 'DAMAGE_RESISTANCE, 8s, 3'
+  ENEMY_EFFECTS:
+    - 'WITHER, 8s, 2'
+  LORE:
+    - '&7This is a &dRage Ball'
+    - ''
+    - '&7Throw this ball to explode nearby &2faction'
+    - '&2members &7with &cStrenght II &7and &8Resistance'
+    - '&afor 8 seconds&7, while &cenemies &7hit will be'
+    - '&7given &8Wither II &7 for &a8 seconds.'
+    - ''
+    - '&bstore.azurite.net'
+
+CRAFTING_CHAOS:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lCrafting Chaos'
+  MATERIAL: 'WORKBENCH'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  HITS_REQUIRED: 3
+  CHANCE: 20 # Chance of putting player in crafting table
+  SECONDS: 10 # Seconds of being crafting chaos
+  LORE:
+    - '&7This is a &dCrafting Chaos'
+    - ''
+    - '&7Hit an &cenemy &7for &a10 seconds&7, every'
+    - '&7hit &ayou &7deal has a &c20% &7chance of'
+    - '&7putting them in a &dcrafting table.'
+    - ''
+    - '&bstore.azurite.net'
+
+FOCUS_MODE:
+  ENABLED: true
+  DISPLAY_NAME: '&dFocus Mode'
+  MATERIAL: 'GOLD_NUGGET'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  DAMAGE_MULTIPLIER: 1.25 # 25% more damage
+  SECONDS: 10
+  HITS_VALID: 15 # How long ago did a player have to get hit to focus mode on them?
+  LORE:
+    - '&r&7This is a &dFocus Mode'
+    - ''
+    - '&r&7Right click to deal &c25% &7more &cdamage &7to the'
+    - '&r&7last &cenemy &7that hit &ayou &7within &a15 seconds'
+    - '&r&7for the next &a10 seconds.'
+    - ''
+    - '&r&bstore.orangemc.cc'
+
+NINJA_ABILITY:
+  ENABLED: true
+  DISPLAY_NAME: '&dNinja Ability'
+  MATERIAL: 'NETHER_STAR'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  SECONDS: 3 # How long till teleporting?
+  HITS_VALID: 15 # How long ago did a player have to get hit to ninja star to them?
+  LORE:
+    - '&r&7This is a &dNinja Star'
+    - ''
+    - '&r&7Right click to &ateleport &7to the last'
+    - '&r&cenemy &7that &ctagged &ayou &7within &a15 seconds.'
+    - ''
+    - '&r&bstore.orangemc.cc'
+
+ANTI_BUILD:
+  ENABLED: true
+  DISPLAY_NAME: '&dAnti Build'
+  MATERIAL: 'BONE'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  HITS_REQUIRED: 3
+  ANTI_BUILD_TIME: 15
+  DISABLED_INTERACT:
+    - 64
+    - 96
+    - 107
+    - 54
+    - 146
+  EFFECTS_DAMAGER: # The effects the damager gets
+    - 'SPEED, 10s, 3'
+  LORE:
+    - '&r&7This is a &dAnti-Build Bone.'
+    - ''
+    - '&r&7Hit a &cenemy &a3 times &7to stop them from'
+    - '&r&7placeing or breaking blocks for &a15 seconds'
+    - '&r&ayou &7recieve &bSpeed III for &a10 seconds.'
+    - ''
+    - '&r&bstore.orangemc.cc'
+
+PORTABLE_ARCHER:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lPortable Archer'
+  MATERIAL: 'BOW'
+  COOLDOWN: 60
+  DATA: 0
+  DURABILITY: 5 # 5 Uses
+  ENCHANTS:
+    - 'ARROW_INFINITE, 1'
+  LORE:
+    - '&7This is a &dPortable Archer'
+    - ''
+    - '&eArcher tag &cenemies &7without'
+    - '&7needing an &aarcher &7set equipped.'
+    - ''
+    - '&bstore.azurite.net'
+
+INVISIBILITY:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lInvisibility'
+  MATERIAL: 'INK_SACK'
+  COOLDOWN: 120
+  TAKE_ITEM: true
+  DATA: 0
+  INVIS_EFFECT: 'INVISIBILITY, 120s, 2'
+  LORE:
+    - '&7This is &dInvisibility'
+    - ''
+    - '&7Right click to &aactivate &9Invisibility II &7that'
+    - '&7hides any armor &ayou''re &7currently wearing.'
+    - ''
+    - '&cInvisibility will be removed when you re-enter combat!'
+    - ''
+    - '&bstore.azurite.net'
+
+TIME_WARP:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lTime Warp'
+  MATERIAL: 'FEATHER'
+  COOLDOWN: 90
+  TAKE_ITEM: true
+  DATA: 0
+  PEARL_DELAY: 15 # How long ago did the pearl have to be thrown
+  DELAY: 2 # How long before getting teleported back
+  LORE:
+    - '&7This is a &dTime Warp'
+    - ''
+    - '&7Teleports &ayou &7back to the location'
+    - '&7before &ayour &7 last &5pearl&7. After &ayou &5pearl,'
+    - '&ayou &7have &a15 seconds &7to &aactivate &7the &dTime Warp.'
+    - ''
+    - '&bstore.azurite.net'
+
+POCKETBARD:
+  ENABLED: true
+  DISPLAY_NAME: '&d&lPocket Bard'
+  MATERIAL: 'INK_SACK'
+  COOLDOWN: 60
+  TAKE_ITEM: true
+  DATA: 14
+  LORE:
+    - '&7This is a &dPocket Bard'
+    - ''
+    - '&7Click to open the &dpocket bard &7menu!'
+    - ''
+    - '&bstore.azurite.net'
+  TYPES:
+    # Add as many below this.
+    # These are the items itself (not in menu!)
+    STRENGTH: # the name
+      NAME: '&6Strength II'
+      MATERIAL: 'BLAZE_POWDER'
+      DATA: 0
+      AMOUNT: 3
+      EFFECT: 'INCREASE_DAMAGE, 6s, 2'
+      LORE:
+        - '&7* &aTeam Members'
+    RESISTANCE: # The name
+      NAME: '&6Resistance III'
+      MATERIAL: 'IRON_INGOT'
+      DATA: 0
+      AMOUNT: 3
+      EFFECT: 'DAMAGE_RESISTANCE, 6s, 3'
+      LORE:
+        - '&7* &aTeam Members'
+    JUMP_BOOST: # The name
+      NAME: '&6Jump VII'
+      MATERIAL: 'FEATHER'
+      DATA: 0
+      AMOUNT: 3
+      EFFECT: 'JUMP, 6s, 7'
+      LORE:
+        - '&7* &aTeam Members'
+    SPEED: # The name
+      NAME: '&6Speed III'
+      MATERIAL: 'SUGAR'
+      DATA: 0
+      AMOUNT: 3
+      EFFECT: 'SPEED, 6s, 3'
+      LORE:
+        - '&7* &aTeam Members'
+  POCKETBARD_MENU:
+    TITLE: '&dPocketbard Selection'
+    SIZE: 9
+    ITEMS:
+      # Add as many below this.
+      # These are the items in the menu!
+      STRENGTH:
+        NAME: '&c3x Strength'
+        MATERIAL: 'BLAZE_POWDER'
+        SLOT: 1
+        DATA: 0
+        POCKET_BARD: 'STRENGTH' # Which pocket bard from above is this item representing?
+        LORE: { }
+      RESISTANCE:
+        NAME: '&73x Resistance'
+        MATERIAL: 'IRON_INGOT'
+        SLOT: 2
+        DATA: 0
+        POCKET_BARD: 'RESISTANCE' # Which pocket bard from above is this item representing?
+        LORE: { }
+      JUMP_BOOST:
+        NAME: '&a3x Jump'
+        MATERIAL: 'FEATHER'
+        SLOT: 3
+        DATA: 0
+        POCKET_BARD: 'JUMP_BOOST' # Which pocket bard from above is this item representing?
+        LORE: { }
+      SPEED:
+        NAME: '&b3x Speed'
+        MATERIAL: 'SUGAR'
+        SLOT: 4
+        DATA: 0
+        POCKET_BARD: 'SPEED' # Which pocket bard from above is this item representing?

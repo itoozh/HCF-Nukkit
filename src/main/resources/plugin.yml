@@ -1,0 +1,43 @@
+name: Core
+main: itoozh.core.Main
+version: 1.0
+api: 1.0.13
+description: itoozh´s Core plugin
+
+permissions:
+  core.ability:
+    default: op
+  core.donor:
+    default: op
+  core.rank:
+    default: op
+  core.customsigns:
+    default: op
+  core.pvp:
+    default: true
+  core.sotw:
+    default: op
+  core.sotw.enable:
+    default: true
+  gkit.cooldown.bypass:
+    default: false
+  core.gkit:
+    default: op
+  core.gkit.menu:
+    default: true
+  use.gkit.all:
+    default: false
+  core.balance.take:
+    default: op
+  core.balance.give:
+    default: op
+  core.claim:
+    default: op
+  core.balance:
+    default: true
+  core.team:
+    default: true
+  core.crates:
+    default: op
+  core.free:
+    default: true
